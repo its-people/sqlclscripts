@@ -1,0 +1,10 @@
+
+sql geoff/geoff
+
+set heading off
+set feedback off
+spool "geoff.pipe" 
+select /*insert*/ * from employees;
+spool off 
+
+

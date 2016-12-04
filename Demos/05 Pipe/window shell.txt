@@ -1,0 +1,16 @@
+rm geoff.pipe; mkfifo geoff.pipe
+
+echo connect chris/chris > geoff.pipe
+
+echo select \* from user_objects > geoff.pipe
+
+echo set sqlformat ansiconsole > geoff.pipe
+
+echo select \* from user_objects > geoff.pipe
+
+
+
+-- important:
+-- escape * 
+-- escape semicolon (or skip)
+-- alternatively: use quotes ''
