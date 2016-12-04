@@ -1,10 +1,18 @@
+rm geoff.pipe; mkfifo geoff.pipe
+
+echo connect chris/chris > geoff.pipe
+
 
 sql geoff/geoff
+
+set sqlformat ansiconsole
+select * from employees;
 
 set heading off
 set feedback off
 spool "geoff.pipe" 
 select /*insert*/ * from employees;
+rollback;
 spool off 
 
 

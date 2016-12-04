@@ -6,7 +6,7 @@ java -cp ./luaj-jse-3.0.1.jar lua ./fibonacci.lua
 
 
 echo "SQLcl won't find the interpreters"
-sql doag/doag << EOF
+sql geoff/geoff << EOF
 
 script ./fibonacci.py
 script ./fibonacci.lua
@@ -18,7 +18,7 @@ export CLASSPATH="jython-standalone-2.7.0.jar:luaj-jse-3.0.1.jar"
 
 echo CLASSPATH: $CLASSPATH
 
-sql doag/doag << EOF
+sql geoff/geoff << EOF
 
 script ./fibonacci.py
 script ./fibonacci.lua
