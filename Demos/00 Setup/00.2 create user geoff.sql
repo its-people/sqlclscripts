@@ -1,6 +1,0 @@
-CREATE USER geoff IDENTIFIED BY geoff;
-
-GRANT "DBA" TO geoff;
-
-GRANT UNLIMITED TABLESPACE TO geoff;
-/
