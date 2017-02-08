@@ -10,9 +10,9 @@ select * from employees;
 
 set heading off
 set feedback off
-spool "geoff.pipe" 
+spool "geoff.pipe"
 select /*insert*/ * from employees;
 rollback;
-spool off 
+spool off
 
 

@@ -1,11 +1,10 @@
-// Users could be filled from a JSON-File
-//fs = require('fs')
-//users = JSON.parse(fs.readFileSync("04 - Users.json", 'utf8'));
+// Users could be filled from a JSON-File as well...
 users=[
   {"user" : "DATA"                   , "password" : "E_DXxXxXe2r" }
 , {"user" : "DBGDI"                  , "password" : "E_bXxXxXdfeym" }
 , {"user" : "DBIS_EXPORT_OWD"        , "password" : "E_WXxXxXt_u5b" }
 , {"user" : "DOOTZ"                  , "password" : "E_OXxXxX_uas" }
+, {"user" : "BARRY"                  , "password" : "Barry's Secret" }
 , {"user" : "EBA_LAERM_EXPORT_OWNER" , "password" : "E_aXxXxXO34dnE" }
 , {"user" : "EBA_PLATZ"              , "password" : "E_cXxXxXushU" }
 , {"user" : "ELBEKA"                 , "password" : "E_fXxXxXewl" }
@@ -47,6 +46,7 @@ function getPasswd(username){
 }
 
 // Using in Scripts:
-ctx.write( "The password of Schema DOOTZ is "
-  + getPasswd("DOOTZ")+ "\n");
+var uname = "BARRY";
+ctx.write( "The password of Schema "+uname+" is "
+  + getPasswd(uname)+ "\n");
 
